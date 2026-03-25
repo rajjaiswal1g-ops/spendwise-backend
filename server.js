@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use('/api/auth', require('./routes/auth'));
-app.use('/api/transaction', require('./routes/transaction'));
+app.use('/api/transactions', require('./routes/transactions'));
 
 // Database Connection Logic
 mongoose.connect(process.env.MONGO_URI)
